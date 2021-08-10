@@ -1,0 +1,11 @@
+<p [appHighlight]="color">Highlight Me</p>
+<div>
+    <a [routerLink]="['/home']">Home</a><br>
+    <a [routerLink]="['/career']">Career</a><br>
+    <a [routerLink]="['/about']">About</a><br>
+    <a [routerLink]="['/default',1]">Default</a>
+</div>
+
+<section>
+    <router-outlet></router-outlet>
+</section>
