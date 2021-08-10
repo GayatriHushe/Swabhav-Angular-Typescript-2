@@ -5,3 +5,10 @@ Day 58 : 9/8/21
   - Programs :
       - mini-spa-app
 	  - route-guard-app
+	  
+Day 59 : 10/8/21
+  - Programs :
+      - form-validation-app
+	  - welcome2-app
+	  - student-api -> Pending
+	  - acme-app -> Pending
