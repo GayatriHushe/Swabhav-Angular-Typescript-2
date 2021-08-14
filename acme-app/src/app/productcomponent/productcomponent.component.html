@@ -1,0 +1,49 @@
+<p>productcomponent works!</p>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3>Product Details: {{ product.productName }}</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td>Name:</td>
+                            <td>{{ product.productName }}</td>
+                        </tr>
+                        <tr>
+                            <td>Code:</td>
+                            <td>{{ product.productCode }}</td>
+                        </tr>
+                        <tr>
+                            <td>Description:</td>
+                            <td>{{ product.description }}</td>
+                        </tr>
+                        <tr>
+                            <td>Availability:</td>
+                            <td>{{ product.releaseDate }}</td>
+                        </tr>
+                        <tr>
+                            <td>Price:</td>
+                            <td>{{ product.price | currency: "$" }}</td>
+                        </tr>
+                        <tr>
+                            <td>5 Star Rating:</td>
+                            <td>
+                                <app-ratingcomponent [rating]="product.starRating"></app-ratingcomponent>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-xs-6">
+                    <img class="img-responsive" [src]="product.imageUrl" />
+                </div>
+            </div>
+            <div class="row">
+                <a [routerLink]="'/list'" class="btn btn-primary" style="margin-left: 10px">
+                    < Back</a>
+            </div>
+        </div>
+    </div>
+</div>
